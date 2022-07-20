@@ -51,6 +51,9 @@ body{
     justify-content: space-between;
     margin: 0;
 }
+.mob-side-navbar .nav-items ul li {
+    margin: 8px 0;
+}
 
 .fit-image{
     height: 100%;
