@@ -19,7 +19,7 @@ body{
     position: absolute;
     height: 100vh;
     background-image: linear-gradient(179deg, #64605c, #3b424b);
-    width: 50%;
+    width: 70%;
     display: grid;
     place-content: center;
     left: -50%;
@@ -38,6 +38,7 @@ body{
 .mob-side-navbar ul a {
     color: #fff;
     text-decoration: none;
+    font-size: clamp(12px, 3.5vw, 16px);
 }
 .mob-side-navbar .nav-items {
     justify-content: space-between;
@@ -51,7 +52,10 @@ body{
     justify-content: space-between;
     margin: 30px;
 }
-
+.mob-side-navbar .nav-items ul li {
+    line-height: 1;
+    margin: 5px 0;
+}
 .fit-image{
     height: 100%;
     object-fit: cover;
@@ -410,15 +414,15 @@ html body .newsroom a {
 .main-footer .inner-main-footer .footer-email a {
     text-decoration: none;
     color: #fff;
-    font-size: clamp(13px, 1.5vw, 13px);
     padding: 3px;
     text-align: center;
     font-weight: 600;
+    font-size: clamp(12px, 0.5vw, 13px);
 }
 .main-footer .inner-main-footer .footer-tel a {
     color: #fff;
     text-decoration: none;
-    font-size: clamp(13px, 1.5vw, 13px);
+    font-size: clamp(12px, 0.5vw, 13px);
     display: inline-block;
     padding: 3px;
     text-align: center;
