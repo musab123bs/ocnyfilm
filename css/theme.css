@@ -1,14 +1,52 @@
 /* utlility Class */
 /* scroll sidebar */
 
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=UnifrakturCook&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=UnifrakturCook&display=swap'); */
 
 body{
-    font-family: 'Montserrat', sans-serif;
+    /* font-family: 'Montserrat', sans-serif; */
+    font-family: acumin-pro-condensed, sans-serif;
+
+font-weight: 400;
+
+font-style: normal;
 }
+
+
+/* Fonts added:
+
+
+
+font-family: acumin-pro-condensed, sans-serif;
+
+font-weight: 400;
+
+font-style: normal;
+
+--------------------
+
+font-family: acumin-pro-condensed,sans-serif;
+
+font-weight: 700;
+
+font-style: normal;
+
+-------------------
+
+
 
 /* mob toggle side bar */
 
+
+
+h1,h2,h3,h4,h5,h5{
+    font-family: bely-display,sans-serif;
+    font-weight: 400;
+    font-style: normal; 
+}
+h1, h2{
+    font-size: clamp(20px, 3.2vw, 48px);
+}
 .fixed {
     position: fixed !important;
     top:0; left:0;
@@ -19,7 +57,7 @@ body{
     position: absolute;
     height: 100vh;
     background-image: linear-gradient(179deg, #64605c, #3b424b);
-    width: 70%;
+    width: 50%;
     display: grid;
     place-content: center;
     left: -50%;
@@ -38,7 +76,6 @@ body{
 .mob-side-navbar ul a {
     color: #fff;
     text-decoration: none;
-    font-size: clamp(12px, 3.5vw, 16px);
 }
 .mob-side-navbar .nav-items {
     justify-content: space-between;
@@ -52,10 +89,7 @@ body{
     justify-content: space-between;
     margin: 30px;
 }
-.mob-side-navbar .nav-items ul li {
-    line-height: 1;
-    margin: 5px 0;
-}
+
 .fit-image{
     height: 100%;
     object-fit: cover;
@@ -105,8 +139,8 @@ img{
     left: 5%;
     transform: translate(0%, -50%);
     color: #fff;
-    font-size: clamp(20px, 3.5vw, 72px);
-    width: calc(22% + 100px);
+    font-size: clamp(20px, 4.5vw, 76px);
+    width: calc(22% + 200px);
 }
 .logo-holder {
     width: calc(10% + 60px);
@@ -128,6 +162,8 @@ img{
 .nav-items {
     align-items: center;
     display: flex;
+    justify-content: space-between;
+    width: -webkit-fill-available;
 }
 
 .header-about {
@@ -175,14 +211,15 @@ img{
 .most-top li a {
     color: #fff;
     text-decoration: none;
-    font-family: 'Bebas Neue', cursive;
     position: relative;
-    font-size: clamp(14px, 1.2vw, 23px);
+    font-size: clamp(12px, 1.2vw, 17px);
+    font-family: 'acumin-pro-condensed';
 }
 .ourinfo .contactNumber {}
 .ourinfo .contactNumber a {
     color: #f15924;
     text-decoration: none;
+    font-size: clamp(12px, 1.2vw, 17px);
 }
 .most-top .main-addrs {
     display: flex;
@@ -195,6 +232,9 @@ img{
 .bottom-head ul {
     list-style: none;
     margin-bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
 }
 .bottom-head ul a {
     color: #fff;
@@ -202,7 +242,7 @@ img{
     padding: 10px 14px 10px 0;
     margin: 5px;
     /* white-space: nowrap; */
-    font-size: clamp(12px, 1.0vw, 23px);
+    font-size: clamp(13px, 1.0vw, 23px);
 }
 .bottom-head ul a:nth-child(1) {
     margin-left: 0;
@@ -240,10 +280,12 @@ section {
     padding: 8px 17px;
     background-color: #f26d3e;
     border-radius: 4px;
+    font-size: clamp(16px, 3.2vw, 20px);
 }
 .film-main-heading.mb-5 {}
 .film-main-heading.mb-5 h1 {
     color: #fff;
+    font-size: clamp(27px, 3.5vw, 48px);
 }
 .inner-film-col {
     padding: 10px;
@@ -294,13 +336,15 @@ section {
 .find .main-finder .inner-col-finder .main-finder-content .finder-inner-content h4 {
     color: #f15924;
     font-weight: 600;
+    font-family: 'acumin-pro-condensed';
 }
 .find .main-finder .inner-col-finder .main-finder-content .finder-inner-content p {
     font-weight: 600;
-    font-size: clamp(13px, 2.5vw, 14.5px);
-    font-family: 'Montserrat', sans-serif;
+    font-size: clamp(13px, 2.5vw, 15px);
 }
-
+.find .main-finder .inner-col-finder .main-finder-content .finder-inner-content p a {
+    text-decoration: none;
+}
 /* historic section */
 
 .historicsection {
@@ -330,7 +374,7 @@ section {
     font-size: clamp(8px, 2.5vw, 22px);
 }
 .historicsection .hist-banner-content h1 {
-    font-size: clamp(13px, 3.5vw, 72px);
+    font-size: clamp(14px, 4.5vw, 60px);
 }
 
 /* newsroom */
@@ -408,7 +452,7 @@ html body .newsroom a {
     margin-right: 5px;
     background-color: #fff;
     font-weight: 600;
-    font-family: 'Montserrat', sans-serif;
+    font-size: clamp(14px, 1.2vw, 20px);
 }
 .main-footer .inner-main-footer .footer-email {display: flex;align-items: center;justify-content: center;height: 100%;}
 .main-footer .inner-main-footer .footer-email a {
@@ -417,12 +461,12 @@ html body .newsroom a {
     padding: 3px;
     text-align: center;
     font-weight: 600;
-    font-size: clamp(12px, 0.5vw, 13px);
+    font-size: clamp(14px, 1.2vw, 20px);
 }
 .main-footer .inner-main-footer .footer-tel a {
     color: #fff;
     text-decoration: none;
-    font-size: clamp(12px, 0.5vw, 13px);
+    font-size: clamp(14px, 1.2vw, 20px);
     display: inline-block;
     padding: 3px;
     text-align: center;
@@ -457,7 +501,7 @@ html body .newsroom a {
 .copyright ul li a {
     text-decoration: none;
     color: var(--bs-body-color);
-    font-family: var(--bs-body-font-family);
+    /* font-family: var(--bs-body-font-family); */
     font-size: var(--bs-body-font-size);
     font-weight: var(--bs-body-font-weight);
     line-height: var(--bs-body-line-height);
