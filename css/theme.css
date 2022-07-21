@@ -335,8 +335,8 @@ section {
 }
 .find .main-finder .inner-col-finder .main-finder-content .finder-inner-content h4 {
     color: #f15924;
-    font-weight: 600;
     font-family: 'acumin-pro-condensed';
+    font-size: clamp(14px, 3.2vw, 32px);
 }
 .find .main-finder .inner-col-finder .main-finder-content .finder-inner-content p {
     font-weight: 600;
@@ -502,7 +502,7 @@ html body .newsroom a {
     text-decoration: none;
     color: var(--bs-body-color);
     /* font-family: var(--bs-body-font-family); */
-    font-size: var(--bs-body-font-size);
+    /* font-size: var(--bs-body-font-size); */
     font-weight: var(--bs-body-font-weight);
     line-height: var(--bs-body-line-height);
     font-weight: 600;
