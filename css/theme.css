@@ -57,10 +57,10 @@ h1, h2{
     position: absolute;
     height: 100vh;
     background-image: linear-gradient(179deg, #64605c, #3b424b);
-    width: 50%;
+    width: 70%;
     display: grid;
     place-content: center;
-    left: -50%;
+    left: -70%;
     top: 0;
     transition: 0.5s;
     z-index: -1;
